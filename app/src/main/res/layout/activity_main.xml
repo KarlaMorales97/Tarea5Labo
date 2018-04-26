@@ -79,19 +79,21 @@
                 android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="7"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_gravity="center_vertical"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:text="@string/title"/>
 
-            <Button
-                android:id="@+id/ButtonVer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ver"
-                android:onClick="Click"/>
+
+            <CheckBox
+                android:id="@+id/buttonVer"
+                android:layout_weight="1"
+                android:layout_width="49dp"
+                android:layout_height="42dp"
+                android:button="@drawable/st"
+                android:layout_toRightOf="@id/name"/>
 
 
 
@@ -106,16 +108,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-   <!-- <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
- -->
-
-
 
 </android.support.design.widget.CoordinatorLayout>

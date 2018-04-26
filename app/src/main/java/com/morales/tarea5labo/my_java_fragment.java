@@ -49,7 +49,7 @@ RecyclerView rv;
 
         if(bundle!=null){
             Serie serie = (Serie)bundle.getSerializable("Bool");
-            System.out.println("VALOR ES:"+serie.getName());
+            System.out.println("Comida:"+serie.getName());
             series.add(0, serie);
             adapter.notifyItemInserted(0);
             adapter.notifyItemRangeChanged(0, series.size());

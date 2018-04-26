@@ -18,6 +18,8 @@ import java.util.ArrayList;
 
 public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesViewHolder> {
 
+
+
     private ArrayList<Serie> series;
 
     @Override
@@ -57,7 +59,7 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
             card = itemView.findViewById(R.id.card_view);
             name = itemView.findViewById(R.id.name);
             img = itemView.findViewById(R.id.img);
-            buttonVer = itemView.findViewById(R.id.ButtonVer);
+            buttonVer = itemView.findViewById(R.id.buttonVer);
 
         }
     }
